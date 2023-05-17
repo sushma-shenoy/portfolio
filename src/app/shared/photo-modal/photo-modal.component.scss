@@ -1,0 +1,34 @@
+.mat-dialog-content{
+}
+.mdc-dialog__content>:last-child{
+    // height: calc(100vh - 362px);
+   
+    animation: imageView 2s ease 0s forwards;
+
+}
+
+@keyframes imageView {
+    from{
+        height:0;
+        // transform: rotate(0deg);
+    }
+    to{
+        height: calc(100vh - 362px);
+        // transform: rotate(-90deg);
+    }
+}
+.rotate{
+    animation: landscape 1s ease 0s forwards !important;
+    // transform: rotate(-90deg) ;
+    
+
+}
+@keyframes landscape {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+       
+         transform: rotate(-90deg);
+    }
+}

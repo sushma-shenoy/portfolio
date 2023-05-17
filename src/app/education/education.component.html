@@ -1,0 +1,25 @@
+<section data-aos="fade-up" data-aos-duration="4000" class="educationContainer  justifyCenter sidePadding30 mb-147  " (mouseleave)="mouseLeave()">
+    <div  class="sectionHeader flex">Education</div>
+    <div class="eduBackground" [ngClass]="cardSelected =='card3'? 'engBackground' : cardSelected == 'card2'? 'puBackground':'schoolBackground'">
+
+    </div>
+    <div data-aos="flip-up" data-aos-duration="7000" data-aos-delay="50"   (mouseleave)="mouseLeave()"  id="card1"  (mouseover)="mouseEnter('card1')"  class="eduactionCard card1">
+        <h2 class="institution">10th grade (High School)</h2>
+        
+        <h4 class="instName">Canara Girls' High School</h4>
+        <p>I completed my high school here in 2012</p>
+    </div>
+    <div  data-aos="flip-up" data-aos-duration="4000"  data-aos-delay="60" (mouseleave)="mouseLeave()" id="card2"  (mouseover)="mouseEnter('card2')" class="eduactionCard card2">
+        <h2 class="institution">Senior High School(Pre Univeristy)</h2>
+        <h4 class="instName">Canara Pre University College</h4>
+        <p>I graduated from NMAM Institute of Technology. This degree helped me in enhancing my knowledge of subjects such as Data Structures, Algorithms, Data Mining, 
+            and also of programming languages like C, C++, and Java</p>
+    </div>
+    <div data-aos="flip-up" data-aos-duration="4000" data-aos-delay="70"  (mouseleave)="mouseLeave()"  id="card3" (mouseover)="mouseEnter('card3')" class="eduactionCard card3">
+        <h2 class="institution">Bachelor of Engineering in Information Science</h2>
+
+        <h4 class="instName">NMAM Institute of Technology</h4>
+        <p>I graduated from NMAM Institute of Technology. This degree helped me in enhancing my knowledge of subjects such as Data Structures, Algorithms, Data Mining, 
+            and also of programming languages like C, C++, and Java</p>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+.headerOption{
+    flex-basis: 38%;
+    gap: 70px;
+    padding:0 25px;
+    transition: .25s padding-top ease-in-out,.25s padding-bottom ease-in-out
+}
+.header{
+    position: fixed;
+    z-index: 2;
+  
+}
+li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--brown);
+
+}
+ul{
+    list-style-type: none;
+}
+.sectioncontainer{
+
+}
+.animateHeader{
+    // height:0%;
+    width: 100%;
+    z-index: 1;
+    transition: all 3s ease-out;
+    -webkit-transition:  all 3s ease-out;
+}

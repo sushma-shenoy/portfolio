@@ -1,0 +1,29 @@
+.certConatiner{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin: auto;
+
+
+}
+.certcard{
+   flex-basis: 545px;
+   flex-grow: 1;
+
+    img{
+        width: 100%;
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border-radius: 5px;
+    
+    }
+
+}
+.section{
+    max-width:90%
+  }

@@ -1,0 +1,91 @@
+.eduBackground{
+transition: background-image 1s ease-in;
+filter: blur(2px);
+/* width: 100%; */
+background-size: cover;
+height: 100%;
+background-repeat: no-repeat;
+background-position: center;
+margin: 0 auto;
+position: inherit;
+z-index: -1;
+}
+.engBackground{
+background-image: url(./../../assets/images/collegebackground.jpg);
+}
+.puBackground{
+background-image: url(./../../assets/images/canara-pre-university.avif);
+
+}
+.schoolBackground{
+background-image: url(./../../assets/images/school.jpg);
+
+}
+.educationContainer{
+   
+    height: 852px;
+    position: relative; 
+    padding: 10px;
+    margin-left:  11%;
+    margin-right: 11%;
+}
+div caption {
+    padding: 10px;
+}
+.eduactionCard{
+    position: absolute;
+   
+    border: 10px solid var(--brown);
+   
+    background: #fff;
+    padding: 15px 20px;
+    width: 40%;
+    
+}
+.card1{
+    top: 15%;
+    left: 4%;
+    transition: top 0.5s , left 0.5s;
+}
+.card1:hover{
+    transform: scale(1.06);
+    z-index: 2;
+    top:17%;
+    left:10%
+
+}
+
+.card2{
+    top: 25%;
+    left: 7%;
+    transition: top 0.5s , left 0.5s;
+
+    &:hover{
+        transform:  scale(1.06);
+        z-index: 2; 
+        top:27%;
+    left:10% 
+    }
+}
+.card3{
+    top:30%;
+    left:10%;
+    transition: top 0.5s , left 0.5s;
+
+    &:hover{
+        transform:  scale(1.06);  
+        z-index: 2;
+        top:30%;
+    left:10%
+    }
+}
+.blurCard{
+    filter:blur(3px);
+
+}
+.institution{
+    color:var(--brown)
+}
+.instName{
+    color: var(--green);
+}

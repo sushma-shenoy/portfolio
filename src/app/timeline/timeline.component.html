@@ -1,0 +1,82 @@
+<section id="work" class="section" data-aos="fade-up" data-aos-duration="4000">
+<div  id="work" class="sectionHeader">Work Experience</div>
+<div  class="timeline">
+    <div *ngFor="let project of Projects  ;let i=index">
+    <div *ngIf="(i+1)%2 !=0;else rightSide" class="container left">
+      <div class="date desktop">{{project.year}}</div>
+      <i class="fa-solid icon desktop fa fa-briefcase" style="color: #b1a9a9;"></i>
+      <div class="content">
+        <div  class="dateMobile mobile">{{project.year}}</div>
+
+        <h2>{{project.role}}</h2>
+        <p>
+            {{project.name}}
+        </p>
+        <div>{{project.tag}}</div>
+    
+    <!-- <div *ngFor="let term of project|keyvalue">
+        <div>{{term.value}}</div>
+    </div> -->
+    </div>
+    </div>
+    <ng-template #rightSide>
+        <div class="container right">
+            <div class="date">{{project.year}}</div>
+            <i class=" desktop fa-solid icon fa fa-briefcase" style="color: #b1a9a9;"></i>
+            <div class="content">
+                <h2>{{project.role}}</h2>
+                <p>
+                    {{project.name}}
+                </p>
+                <div>{{project.tag}}</div>
+            
+            <!-- <div *ngFor="let term of project|keyvalue">
+                <div>{{term.value}}</div>
+            </div> -->
+            </div>
+          </div>
+    </ng-template>
+   
+    <!-- <div class="container left">
+      <div class="date">10 Jul</div>
+      <i class="fa-solid fa-briefcase" style="color: #b1a9a9;"></i>
+      <div class="content">
+        <h2>Front-end Developer</h2>
+        <p>
+          Built a workforce management platform which connnects employees to opportunities and resources within the workplace for accelerated growth anf results. 
+        </p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="date">18 May</div>
+      <i class="fa-solid fa-briefcase" style="color: #b1a9a9;"></i>
+      <div class="content">
+        <h2>Front-end Developer</h2>
+        <p>
+          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+        </p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="date">10 Feb</div>
+      <i class="fa-solid fa-briefcase" style="color: #b1a9a9;"></i>
+      <div class="content">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+        </p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="date">01 Jan</div>
+      <i class="fa-solid fa-briefcase" style="color: #b1a9a9;"></i>
+      <div class="content">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+        </p>
+      </div>
+    </div> -->
+</div>
+  </div>
+</section>

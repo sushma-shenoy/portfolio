@@ -1,0 +1,18 @@
+.sketchCard {
+  display: flex;
+//   flex-shrink: 2;
+//   flex-grow: 4;
+  /* width: 30%; */
+  height: 279px;
+}
+.cardContainer {
+  width: 100%;
+  flex-direction: row;
+  gap: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section{
+  max-width:90%
+}
