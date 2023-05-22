@@ -10,7 +10,7 @@
 
 }
 .certcard{
-   flex-basis: 545px;
+   flex-basis: 350px;
    flex-grow: 1;
 
     img{
@@ -26,4 +26,12 @@
 }
 .section{
     max-width:90%
+  }
+  .certcard:last-child{
+    flex-grow: 0;
+  }
+  @media screen and (max-width:500px) {
+     .certcard{
+        flex-basis: 140PX;
+     }
   }

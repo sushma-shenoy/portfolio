@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { SharedService } from "./shared.service";
 
 @Component({
   selector: "app-root",
@@ -7,12 +8,22 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   isDesktop = false;
-
-  constructor() {
-    if (window.innerWidth > 500) this.isDesktop = true;
+  constructor(private sharedService: SharedService) {
+    this.sharedService.getDeviceDetail();
+    window.addEventListener(
+      "resize",
+      () => {
+        if (window.innerWidth > 550) this.sharedService.isDesktop.next(true);
+        else {
+          this.sharedService.isDesktop.next(false);
+        }
+      },
+      true
+    );
+    this.sharedService.isDesktop.subscribe((data) => (this.isDesktop = data));
     let sec = document.addEventListener("scroll", () => {
       this.hovers();
-      var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+      var st = window.pageYOffset || document.documentElement.scrollTop;
       if (
         st > lastScrollTop &&
         (document.body.scrollTop > 550 ||

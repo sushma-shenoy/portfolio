@@ -2,7 +2,7 @@
     <div  class="sectionHeader flex">Paintings/ Pencil Sketches</div>
 
     <div class="flex cardContainer w-100percnet" >
-        <div class="shimmer" *ngIf="true"></div>
+        <div class="shimmer" *ngIf="false"></div>
         <div *ngFor="let image of images;let i=index" class="sketchCard">
 <img (click)="viewImage(image,i)" [src]="image">
         </div>

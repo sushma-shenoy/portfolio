@@ -10,3 +10,16 @@ padding:0 12px
                     font-size: 14px;
                     transform: scale(1.05);
 }
+.logoImage{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width:500px) {
+    .logoImage{
+       
+        height: 20px;
+    }
+    .sideMenuContainer{
+        padding:0 4px
+    }
+}

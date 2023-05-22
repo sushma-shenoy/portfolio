@@ -3,7 +3,7 @@ transition: background-image 1s ease-in;
 filter: blur(2px);
 /* width: 100%; */
 background-size: cover;
-height: 100%;
+height: calc(100vh - 75px) !important;
 background-repeat: no-repeat;
 background-position: center;
 margin: 0 auto;
@@ -23,11 +23,9 @@ background-image: url(./../../assets/images/school.jpg);
 }
 .educationContainer{
    
-    height: 852px;
+    //height: 852px;
     position: relative; 
-    padding: 10px;
-    margin-left:  11%;
-    margin-right: 11%;
+
 }
 div caption {
     padding: 10px;
@@ -88,4 +86,35 @@ div caption {
 }
 .instName{
     color: var(--green);
+}
+@media screen and (max-width:600px){
+   .engBackground, .puBackground, .schoolBackground{
+    height: 0;
+    }
+//    .educationContainer{
+//     margin-left: 0;
+//     margin-right: 0;
+//    }
+   .eduactionCard{
+    width:unset;
+    position: initial;
+    width: 81%;
+    border: 1px solid var(--brown);
+    margin:auto
+
+}
+.eduactionCard > *{
+    margin-block: 0;
+}
+.educationContainer{
+height: auto;
+margin-bottom: 0;
+}
+}
+.arrow{
+    width: 33px;
+    position: absolute;
+    /* float: right; */
+    right: -6px;
+    top: 62px;
 }

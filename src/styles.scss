@@ -1,8 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./variables.scss";
 @import "./colors.scss";
+@import "./../node_modules/slick-carousel/slick/slick.scss";
+@import "./../node_modules/slick-carousel/slick/slick-theme.scss";
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.slick-slider {
+    width: 88%;
+    margin: auto;
+    
+  }
+  
+body .slick-prev, 
+body .slick-next {
+    height: 35px;
+    width: 32px;
+    background: radial-gradient(rgba(221, 221, 78, 0.84), rgba(255, 209, 26, 0.73), rgba(231, 205, 18, 0.92)) !important;
+    z-index: 100;
+    border-radius: 57px !important;
+}
+.slick-disabled{
+    display: none !important;
+}
 
 :root{   
     --brown:#86592d;
@@ -54,9 +73,10 @@ body {
 }
 .sectionHeader{
     position: relative;
-    width: -webkit-fill-available;
+    width: max-content;
         display: flex;
     font-size: 24px;
+    font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 1px;
     letter-spacing: 3px;
@@ -66,7 +86,8 @@ body {
     margin-bottom: 3.5rem;
     position: relative;
     color: #111;
-    margin: 39px auto;
+    margin: 0 auto 15px auto;
+    padding-bottom: 10px;
 }
 .sectionHeader:before {
     content: "";
@@ -85,10 +106,17 @@ body {
     width: 90%;
     max-width: 1060px;
     margin: 0 auto;
+    
+    padding: 30px 15px;
+
 }
 @media screen and (max-width:500px) {
     .section{
     width: unset; 
+    margin: 0 auto;
+    }
+    .sectionHeader{
+        font-size: 14px;
     }
 }
 .active{

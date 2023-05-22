@@ -1,8 +1,8 @@
-<section>
+<section class="section">
     <div  class="sectionHeader flex">Certificates</div>
     <div class="certConatiner">
     <div class="certcard" *ngFor="let cert of Certificates">
-        <img (click)="onClick()" src="assets/images/certificate/{{cert}}">
+        <img (click)="viewImage(cert)" src="{{cert}}">
     </div>
 </div>
 </section>

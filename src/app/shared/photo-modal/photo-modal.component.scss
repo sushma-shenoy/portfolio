@@ -6,6 +6,17 @@
     animation: imageView 2s ease 0s forwards;
 
 }
+img{
+    width: -moz-max-content;
+    width: intrinsic;
+    width: -webkit-fill-available;
+}
+#imageGallery{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 @keyframes imageView {
     from{
@@ -22,7 +33,7 @@
     // transform: rotate(-90deg) ;
     
 
-}
+}   
 @keyframes landscape {
     from{
         transform: rotate(0deg);
@@ -31,4 +42,15 @@
        
          transform: rotate(-90deg);
     }
+}
+@media screen and (max-width:500px) {
+    ::ng-deep  .cdk-overlay-pane{
+        max-width: 91vw !important;
+
+    }
+    .mdc-dialog__content{
+        padding: 20px 4px 20px 4px !important;
+
+    }
+    
 }
