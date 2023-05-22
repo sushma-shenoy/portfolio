@@ -54,8 +54,8 @@ body {
 }
 .sectionHeader{
     position: relative;
-    width:max-content ;
-    display: flex;
+    width: -webkit-fill-available;
+        display: flex;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -85,6 +85,11 @@ body {
     width: 90%;
     max-width: 1060px;
     margin: 0 auto;
+}
+@media screen and (max-width:500px) {
+    .section{
+    width: unset; 
+    }
 }
 .active{
 color: black !important   ;
