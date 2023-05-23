@@ -37,9 +37,13 @@ body .slick-next {
 *{
     font-family: 'Playfair Display', serif;
     outline: none;
+    touch-action: manipulation;
+
 }
 body {
     box-sizing: border-box;
+    touch-action: manipulation;
+
   }
 html,body{
     padding: 0;
