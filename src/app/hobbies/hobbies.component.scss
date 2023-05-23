@@ -17,5 +17,8 @@
 @media screen and (max-width:500px) {
   .sketchCard {
   height: 114px;
+  img{
+height: 100%;
+  }
   }
 }
