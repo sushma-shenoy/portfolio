@@ -11,7 +11,8 @@ font-weight: 100;
     background-blend-mode: soft-light;
     background-size: contain;
     transition: all 3s ease-in 3s;
-height: 75vh;
+  height: 476px;
+
     animation-name: text;
     padding-top: 57px;
     animation-duration: 2s;
@@ -74,7 +75,7 @@ h1{
         animation-duration: 2s;
         animation-timing-function: linear;
         text-shadow: #333300 1px 0 10px;
-        font-size: 7vw;
+        font-size: 3rem;
     }
 .moreAbout{
     background: #997300;
@@ -87,16 +88,7 @@ h1{
     opacity: 0.7;
 cursor:pointer
 }
-.backDesignBottom{
-    opacity: 0.09;
-    object-fit: contain;
-    width: 62vh;
-    position: absolute;
-    left: 0;
-    transform: translate3d(10px, 8px, 215px) skew(-56deg,45deg);
-    bottom: -25px;
 
-}
 
 @media screen and (max-width:624px) {
     .desktop{

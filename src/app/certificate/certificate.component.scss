@@ -1,6 +1,6 @@
 .certConatiner{
     display: flex;
-    width: 90%;
+    // width: 90%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
@@ -24,9 +24,7 @@
     }
 
 }
-.section{
-    max-width:90%
-  }
+
   .certcard:last-child{
     flex-grow: 0;
   }
