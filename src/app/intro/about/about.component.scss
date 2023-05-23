@@ -1,37 +1,38 @@
-
-
-  .progressBar{
+.progressBar {
     width: 100%;
     margin-top: -18px;
     border-radius: 10px;
-position: relative;
+    position: relative;
     background-color: var(--grey);
-  }
-  .value{
-    
-    /* border: 1px solid; */
+}
+
+.value {
+
     height: 13px;
     background: radial-gradient(rgb(221 221 78 / 84%), rgba(255, 209, 26, 0.73), rgb(231 205 18 / 92%));
     border-radius: 51px;
-  }
-  .value::after{
-   
+}
+
+.value::after {
+
     font-size: 14px;
     text-align: -webkit-center;
     position: absolute;
     top: 129%;
-   
-    background: radial-gradient(rgb(233 233 153 / 84%), rgb(241 227 172 / 73%), rgb(205 199 158 / 92%));    height: 24px;
+
+    background: radial-gradient(rgb(233 233 153 / 84%), rgb(241 227 172 / 73%), rgb(205 199 158 / 92%));
+    height: 24px;
     border-radius: 10px;
     width: 39px;
     color: var(--brown);
     font-weight: bold;
     border-color: #555 transparent transparent;
-  }
-  .value::before{
-    
+}
+
+.value::before {
+
     content: "";
-  
+
     bottom: -5px;
     position: absolute;
     margin-left: -5px;
@@ -39,147 +40,178 @@ position: relative;
     border-left: 5px solid transparent;
     border-bottom: 5px solid rgb(198 207 61 / 73%);
 
-  }
-  .skillContainer{
+}
+
+.skillContainer {
     flex-grow: 1 !important;
-  
-  }
-  .skillHeader{
+
+}
+
+.skillHeader {
     text-align: center;
-    font-size:22px;
+    font-size: 22px;
     color: var(--brown);
     font-weight: bold;
-  }
-  .aboutText{
+}
+
+.aboutText {
     font-size: 17px;
     color: #666;
     line-height: 1.7;
     text-align: justify;
     margin-bottom: 1rem;
-  }
-  .skillTable{
+}
+
+.skillTable {
     border-spacing: 26px 21px;
     position: relative;
     z-index: -1;
-  }
+}
 
-.angular::before{
- 
+.angular::before {
+
     left: 74%;
 }
-.angular{
+
+.angular {
     width: 75%;
 }
-.angular::after{
+
+.angular::after {
     content: "75%";
     left: 71%;
 }
-.javascript{
+
+.javascript {
     width: 75%;
 }
-.javascript::before{
-    left:75%
+
+.javascript::before {
+    left: 75%
 }
-.javascript::after{
+
+.javascript::after {
     content: "75%";
     left: 71%;
 }
-.html{
+
+.html {
     width: 85%;
 }
-.html::before{
-    left:85%
+
+.html::before {
+    left: 85%
 }
-.html::after{
+
+.html::after {
     content: "85%";
     left: 81%;
 }
-.typescript{
-width: 70%;
+
+.typescript {
+    width: 70%;
 }
-.typescript::before{
-    left:70%
+
+.typescript::before {
+    left: 70%
 }
-.typescript::after{
+
+.typescript::after {
     content: "70%";
     left: 65%;
 }
 
-.css{
+.css {
     width: 85%;
-    }
-    .css::before{
-        left:85%
-    }
-    .css::after{
-        content: "85%";
-        left: 80%;
-    }
-    .ionic{
-        width: 50%;
-        }
-        .ionic::before{
-            left:50%
-        }
-        .ionic::after{
-            content: "50%";
-            left: 45%;
-        }
-        
-        .vanillaJS{
-            width: 75%;
-            }
-            .vanillaJS::before{
-                left:75%
-            }
-            .vanillaJS::after{
-                content: "75%";
-                left: 70%;
-            }
-            .reactjs{
-                width: 30%;
-                }
-                .reactjs::before{
-                    left:30%
-                }
-                .reactjs::after{
-                    content: "30%";
-                    left: 25%;
-                }
-                .git{
-                    width: 70%;
-                    }
-                    .git::before{
-                        left:70%
-                    }
-                    .git::after{
-                        content: "70%";
-                        left: 65%;
-                    }
+}
 
-                    .contact{
-                        background: #997300;
-                        border: 1px solid #997300;
-                        border-radius:980px;
-                        padding: 8px 16px;
-                        color:var(--white);
-                        
-                    }
-                    .contact:hover{
-                        opacity: 0.7;
-                    cursor:pointer;
-                    font-size: 14px;
-                    transform: scale(1.05);
-                    }
+.css::before {
+    left: 85%
+}
 
-                    @media screen and (max-width:900px) {
-                       .aboutContainer{
-                        flex-direction: column;
-                       } 
-                       .aboutText{
-                        width:100%
-                       }
-                       .skillTable{
-                        border-spacing: 0 21px ;
-                       }
-                    }
+.css::after {
+    content: "85%";
+    left: 80%;
+}
+
+.ionic {
+    width: 50%;
+}
+
+.ionic::before {
+    left: 50%
+}
+
+.ionic::after {
+    content: "50%";
+    left: 45%;
+}
+
+.vanillaJS {
+    width: 75%;
+}
+
+.vanillaJS::before {
+    left: 75%
+}
+
+.vanillaJS::after {
+    content: "75%";
+    left: 70%;
+}
+
+.reactjs {
+    width: 30%;
+}
+
+.reactjs::before {
+    left: 30%
+}
+
+.reactjs::after {
+    content: "30%";
+    left: 25%;
+}
+
+.git {
+    width: 70%;
+}
+
+.git::before {
+    left: 70%
+}
+
+.git::after {
+    content: "70%";
+    left: 65%;
+}
+
+.contact {
+    background: #997300;
+    border: 1px solid #997300;
+    border-radius: 980px;
+    padding: 8px 16px;
+    color: var(--white);
+
+}
+
+.contact:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 14px;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:900px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .aboutText {
+        width: 100%
+    }
+
+    .skillTable {
+        border-spacing: 0 21px;
+    }
+}

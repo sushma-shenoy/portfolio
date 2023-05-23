@@ -59,6 +59,5 @@ export class AppComponent {
       }
     }
   }
-  // section = 'intro';
   title = "portfolioSushma";
 }

@@ -1,25 +1,28 @@
-.sideMenuContainer{
-    
+.sideMenuContainer {
+
     position: absolute;
-    // transform: translate(0,78%);
     top: 45%;
-padding:0 12px
+    padding: 0 12px
 }
-.icon:hover{
-   cursor:pointer;
-                    font-size: 14px;
-                    transform: scale(1.05);
+
+.icon:hover {
+    cursor: pointer;
+    font-size: 14px;
+    transform: scale(1.05);
 }
-.logoImage{
+
+.logoImage {
     width: 30px;
     height: 30px;
 }
+
 @media screen and (max-width:500px) {
-    .logoImage{
-       
+    .logoImage {
+
         height: 20px;
     }
-    .sideMenuContainer{
-        padding:0 4px
+
+    .sideMenuContainer {
+        padding: 0 4px
     }
 }

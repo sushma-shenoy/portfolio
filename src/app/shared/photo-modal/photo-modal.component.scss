@@ -1,12 +1,11 @@
-.mat-dialog-content{
-}
-.mdc-dialog__content>:last-child{
-    // height: calc(100vh - 362px);
-   
+.mat-dialog-content {}
+
+.mdc-dialog__content>:last-child {
     animation: imageView 2s ease 0s forwards;
 
 }
-img{
+
+img {
     width: -moz-max-content;
     width: intrinsic;
     width: -webkit-fill-available;
@@ -15,7 +14,8 @@ img{
     max-height: 31vh;
 
 }
-#imageGallery{
+
+#imageGallery {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -23,38 +23,41 @@ img{
 
 
 @keyframes imageView {
-    from{
-        height:0;
-        // transform: rotate(0deg);
+    from {
+        height: 0;
     }
-    to{
+
+    to {
         height: calc(100vh - 362px);
-        // transform: rotate(-90deg);
     }
 }
-.rotate{
-    animation: landscape 1s ease 0s forwards !important;
-    // transform: rotate(-90deg) ;
-    
 
-}   
+.rotate {
+    animation: landscape 1s ease 0s forwards !important;
+
+
+}
+
 @keyframes landscape {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
-       
-         transform: rotate(-90deg);
+
+    to {
+
+        transform: rotate(-90deg);
     }
 }
+
 @media screen and (max-width:500px) {
-    ::ng-deep  .cdk-overlay-pane{
+    ::ng-deep .cdk-overlay-pane {
         max-width: 91vw !important;
 
     }
-    .mdc-dialog__content{
+
+    .mdc-dialog__content {
         padding: 20px 4px 20px 4px !important;
 
     }
-    
+
 }

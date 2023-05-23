@@ -1,5 +1,4 @@
-<section 
-    class="educationContainer justifyCenter sidePadding30 mb-147 section" (mouseleave)="mouseLeave()">
+<section class="educationContainer justifyCenter sidePadding30 mb-147 section" (mouseleave)="mouseLeave()">
     <div class="sectionHeader flex">Education</div>
 
     <ng-container *ngIf="isDesktop; else mobileView">
@@ -42,53 +41,48 @@
         </div>
     </ng-container>
     <ng-template #mobileView>
-    <ngx-slick-carousel class="carousel" 
-  #slickModal="slick-carousel" 
-  [config]="slideConfig" 
-  (init)="slickInit($event)"
-  (breakpoint)="breakpoint($event)"
-  (afterChange)="afterChange($event)"
-  (beforeChange)="beforeChange($event)">
-  <div ngxSlickItem  class="slide">
-    <div data-aos="flip-up" data-aos-duration="4000" data-aos-delay="70"
-     id="card6"  class="eduactionCard card3">
-    <h2 class="institution font-15">
-        Bachelor of Engineering in Information Science
-    </h2>
-    
-    <h4 class="instName font-14">NMAM Institute of Technology</h4>
-    <p class="font-13 mb-10">
-        I graduated from NMAM Institute of Technology. This degree helped me in
-        enhancing my knowledge of subjects such as Data Structures, Algorithms,
-        Data Mining, and also of programming languages like C, C++, and Java
-    </p>
-    </div>
-    </div>
-<div ngxSlickItem  class="slide">
-    <div data-aos="flip-up" data-aos-duration="7000" data-aos-delay="50"
-     id="card4" class="eduactionCard card1">
-    <h2 class="institution font-15">10th grade (High School)</h2>
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem class="slide">
+                <div data-aos="flip-up" data-aos-duration="4000" data-aos-delay="70" id="card6"
+                    class="eduactionCard card3">
+                    <h2 class="institution font-15">
+                        Bachelor of Engineering in Information Science
+                    </h2>
 
-    <h4 class="instName font-14">Canara Girls' High School</h4>
-    <p class="font-13 mb-10">I completed my high school here in 2012</p>
-</div>
-</div>
-<div ngxSlickItem  class="slide">
-<div  data-aos="flip-up" data-aos-duration="4000" data-aos-delay="60"
- id="card5"  class="eduactionCard card2">
+                    <h4 class="instName font-14">NMAM Institute of Technology</h4>
+                    <p class="font-13 mb-10">
+                        I graduated from NMAM Institute of Technology. This degree helped me in
+                        enhancing my knowledge of subjects such as Data Structures, Algorithms,
+                        Data Mining, and also of programming languages like C, C++, and Java
+                    </p>
+                </div>
+            </div>
+            <div ngxSlickItem class="slide">
+                <div data-aos="flip-up" data-aos-duration="7000" data-aos-delay="50" id="card4"
+                    class="eduactionCard card1">
+                    <h2 class="institution font-15">10th grade (High School)</h2>
 
-<h2 class="institution font-15">Senior High School(Pre Univeristy)</h2>
-<h4 class="instName font-14">Canara Pre University College</h4>
-<p class="font-13 mb-10">
-    I graduated from NMAM Institute of Technology. This degree helped me in
-    enhancing my knowledge of subjects such as Data Structures, Algorithms,
-    Data Mining, and also of programming languages like C, C++, and Java
-</p>
-</div>
-</div>
+                    <h4 class="instName font-14">Canara Girls' High School</h4>
+                    <p class="font-13 mb-10">I completed my high school here in 2012</p>
+                </div>
+            </div>
+            <div ngxSlickItem class="slide">
+                <div data-aos="flip-up" data-aos-duration="4000" data-aos-delay="60" id="card5"
+                    class="eduactionCard card2">
 
-<!-- <img src="{{ slide.img }}" alt="" width="100%"> -->
+                    <h2 class="institution font-15">Senior High School(Pre Univeristy)</h2>
+                    <h4 class="instName font-14">Canara Pre University College</h4>
+                    <p class="font-13 mb-10">
+                        I graduated from NMAM Institute of Technology. This degree helped me in
+                        enhancing my knowledge of subjects such as Data Structures, Algorithms,
+                        Data Mining, and also of programming languages like C, C++, and Java
+                    </p>
+                </div>
+            </div>
 
-</ngx-slick-carousel>
-</ng-template>
+
+        </ngx-slick-carousel>
+    </ng-template>
 </section>

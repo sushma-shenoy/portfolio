@@ -1,35 +1,32 @@
-.certConatiner{
-    display: flex;
-    // width: 90%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 5px;
-    margin: auto;
-
-
-}
-.certcard{
-   flex-basis: 350px;
-   flex-grow: 1;
-
-    img{
-        width: 100%;
-        object-fit: contain;
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        border-radius: 5px;
-    
-    }
-
+.certConatiner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin: auto;
 }
 
-  .certcard:last-child{
-    flex-grow: 0;
+.certcard {
+  flex-basis: 350px;
+  flex-grow: 1;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
   }
-  @media screen and (max-width:500px) {
-     .certcard{
-        flex-basis: 140PX;
-     }
+}
+
+.certcard:last-child {
+  flex-grow: 0;
+}
+
+@media screen and (max-width:500px) {
+  .certcard {
+    flex-basis: 140PX;
   }
+}

@@ -129,8 +129,7 @@ color: black !important   ;
  transition:  all 0.5s ease-in;
 }
 .growHader{
-    // animation: headerAni 0.5s ease-in-out 0.6s  forwards ;
-    background-image: radial-gradient(rgb(83 215 167 / 84%), rgba(221, 221, 78, 0.84), rgb(15 229 140 / 58%));    // background:url(./../../assets/images/introbackground.svg) radial-gradient(#ffff99, #ffd11a, #ffff80,)     !important;
+    background-image: radial-gradient(rgb(83 215 167 / 84%), rgba(221, 221, 78, 0.84), rgb(15 229 140 / 58%));
         height: 55px !important;
 transition: all 0.5s;
 }

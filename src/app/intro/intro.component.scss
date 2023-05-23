@@ -1,100 +1,114 @@
 @import url(../../colors.scss);
-.introText{
+
+.introText {
     font-size: 24px;
-    margin-top:53px;
- color: var(--white);
-font-weight: 100;
+    margin-top: 53px;
+    color: var(--white);
+    font-weight: 100;
 }
-.introCintainer{
-    background: url(./../../assets/images/protruding-squares.svg), radial-gradient(rgb(255 255 153 / 84%), rgb(255 209 26 / 73%), rgb(84 86 181 / 21%));
-    // background: url(./../../assets/images/protruding-squares.svg), radial-gradient(#ffff99, #ffd11a, #ffff80,) ;
+
+.introCintainer {
+    background: radial-gradient(rgba(83, 215, 167, .84), rgba(221, 221, 78, .84), rgba(15, 229, 140, .58));
+    ;
     background-blend-mode: soft-light;
     background-size: contain;
     transition: all 3s ease-in 3s;
-  height: 476px;
+    height: 476px;
 
     animation-name: text;
     padding-top: 57px;
     animation-duration: 2s;
-    // transition:color 3s ease-in;
- 
-p,h1{
-    color:black;
-    transition-timing-function: ease-in;
-    transition-duration: 1s;
-}
+
+    p,
+    h1 {
+        color: black;
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+    }
 }
 
-.introCintainer:hover ,#sidemenu:hover{
-    // background-position: -2px;
-    //  background-size: cover;
-    background-image: radial-gradient(rgb(83 215 167 / 84%), rgba(221, 221, 78, 0.84), rgb(15 229 140 / 58%));    // background:url(./../../assets/images/introbackground.svg) radial-gradient(#ffff99, #ffd11a, #ffff80,)     !important;
-    p,h1{
+.introCintainer:hover,
+#sidemenu:hover {
+    background-image: radial-gradient(rgb(83 215 167 / 84%), rgba(221, 221, 78, 0.84), rgb(15 229 140 / 58%));
+
+    p,
+    h1 {
         color: #333300;
     }
-    
+
 }
+
 @keyframes text {
-    from{
-       opacity: 0; 
+    from {
+        opacity: 0;
     }
-    to{
-opacity: 1;    }
+
+    to {
+        opacity: 1;
+    }
 }
-path{
+
+path {
     fill: transparent;
 }
-textPath{
-    fill:#86592d;
-    animation: transforms 3s ;
+
+textPath {
+    fill: #86592d;
+    animation: transforms 3s;
 }
+
 @keyframes transforms {
-   from{
-    fill:  #ff4d4d
+    from {
+        fill: #ff4d4d
+    }
 
+    to {
+        fill: #86592d
+    }
 
-   } 
-   to{
-    fill: #86592d
-
-   }
-   
 }
-svg{
+
+svg {
     position: absolute;
     top: 66px;
     width: 451px;
     max-width: 693px;
 }
-h1{
+
+h1 {
     padding: 92px 0 0 0;
-    margin: 0;}
-    div.nameHeading{
-        color:var(--brown);
-        animation-name: text;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-        text-shadow: #333300 1px 0 10px;
-        font-size: 3rem;
-    }
-.moreAbout{
+    margin: 0;
+}
+
+div.nameHeading {
+    color: var(--brown);
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    text-shadow: #333300 1px 0 10px;
+    font-size: 3rem;
+}
+
+.moreAbout {
     background: #997300;
     border: 1px solid #997300;
-    border-radius:980px;
+    border-radius: 980px;
     padding: 8px 16px;
-    color:var(--white);
+    color: var(--white);
 }
-.moreAbout:hover{
+
+.moreAbout:hover {
     opacity: 0.7;
-cursor:pointer
+    cursor: pointer
 }
 
 
 @media screen and (max-width:624px) {
-    .desktop{
+    .desktop {
         display: none;
     }
 }
-a{
+
+a {
     text-decoration: none;
 }
