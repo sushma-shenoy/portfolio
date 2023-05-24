@@ -89,21 +89,10 @@ div.nameHeading {
     font-size: 3rem;
 }
 
-.moreAbout {
-    background: #997300;
-    border: 1px solid #997300;
-    border-radius: 980px;
-    padding: 8px 16px;
-    color: var(--white);
-}
-
-.moreAbout:hover {
-    opacity: 0.7;
-    cursor: pointer
-}
 
 
-@media screen and (max-width:624px) {
+
+@media screen and (max-width:1550px) {
     .desktop {
         display: none;
     }
@@ -111,4 +100,5 @@ div.nameHeading {
 
 a {
     text-decoration: none;
+    color: var(--white);
 }

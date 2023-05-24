@@ -13,6 +13,16 @@ import { CertificateComponent } from "./certificate/certificate.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatDialog } from "@angular/material/dialog";
 import { SlickCarouselModule } from "ngx-slick-carousel";
+import { ContactMeComponent } from "./contact-me/contact-me.component";
+import {
+  MAT_FORM_FIELD_DEFAULT_OPTIONS,
+  MatFormFieldControl,
+  MatFormFieldModule,
+} from "@angular/material/form-field";
+import { ReactiveFormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
+import { MatIconModule } from "@angular/material/icon";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -23,6 +33,8 @@ import { SlickCarouselModule } from "ngx-slick-carousel";
     EducationComponent,
     HobbiesComponent,
     CertificateComponent,
+    ContactMeComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,8 +42,20 @@ import { SlickCarouselModule } from "ngx-slick-carousel";
     AppRoutingModule,
     BrowserAnimationsModule,
     SlickCarouselModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatIconModule,
+    HttpClientModule,
   ],
-  providers: [MatDialog],
+  providers: [
+    HttpClient,
+    MatDialog,
+    {
+      provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
+      useValue: { floatLabel: "auto" },
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

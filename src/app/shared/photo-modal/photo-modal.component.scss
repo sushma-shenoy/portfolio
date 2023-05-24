@@ -48,7 +48,10 @@ img {
         transform: rotate(-90deg);
     }
 }
+::ng-deep .cdk-overlay-dark-backdrop{
+    background: #f2f2f2f7
 
+}
 @media screen and (max-width:500px) {
     ::ng-deep .cdk-overlay-pane {
         max-width: 91vw !important;

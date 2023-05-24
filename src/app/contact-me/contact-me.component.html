@@ -1,0 +1,78 @@
+<section class="section">
+  <div class="sectionHeader flex">Get in touch!</div>
+
+  <div class="container "> 
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+      <div class="flex  w-100percent contactBox">
+        <div class="form-fields flex flexColumn pr-15">
+          <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" type="text" matInput placeholder="Name">
+
+            <mat-hint>Enter your name</mat-hint>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email ID</mat-label>
+            <input formControlName="email" type="email" matInput placeholder="pat@example.com">
+            <mat-icon class="home" matSuffix > email</mat-icon>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Phone number</mat-label>
+            <input formControlName="phone" type="tel" matInput placeholder="Simple placeholder">
+            <mat-icon class="home" matSuffix>phone</mat-icon>
+            <mat-hint>Include area code</mat-hint>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input formControlName="address"  matInput placeholder="Address">
+            <mat-icon class="home"  matSuffix  aria-label="Example home icon" fontIcon="home"></mat-icon>
+
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Message</mat-label>
+            <textarea type="textarea" formControlName="message" matInput placeholder="Leave a message"></textarea>
+            <mat-icon class="home"  matSuffix> message</mat-icon>
+          </mat-form-field>
+
+          <input type="submit"  class="moreAbout">
+        </div>
+        <div class="flex flexColumn textCenter gap">
+          <div>
+          <h3 class="hearFrom font-Lora"><span>I'd &nbsp;</span> 
+            <span>Love &nbsp;</span>
+            <span>To &nbsp;</span>  
+            <span>Hear &nbsp;</span>
+             <span>From &nbsp;</span>
+             <span>You!</span> </h3>
+          <div class="reachOut">You can reach out to me by any means of communication. I will be happy to hear from you.</div>
+        </div>
+          <div>
+            <img class="identityImg" src="assets/images/location_icon.svg">
+            <div class="tagName">Address</div>
+            <div class="tagValue">Santa Clara,California</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25371.348211549728!2d-121.97544975373677!3d37.35627267746515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7815c08c193%3A0xe475a47ca3c0bfc0!2sSanta%20Clara%2C%20CA!5e0!3m2!1sen!2sus!4v1684954386263!5m2!1sen!2sus" width="320" height="300" style="border:0;margin-left: 15px;margin-top: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+          <div>
+            <img class="identityImg" src="assets/images/envelope-of-white-paper.svg">
+            <div class="tagName">Email Address</div>
+            <div class="tagValue">sushma2223@gmail.com</div>
+          </div>
+          <div>
+            
+            <div class="tagName">Social Networks</div>
+            <div class="tagValue"><a href="https://github.com/sushma-shenoy"><img class="logoImage"  src="assets/images/icons8-github.svg"></a>
+              <a href="https://www.linkedin.com/in/sushma-shenoy-7901b5163/">   <img class="logoImage" src="assets/images/linkedin-dark.svg"></a>
+              <a href="https://www.instagram.com/mss_art_gallery/"> <img class="logoImage" src="assets/images/icons8-instagram-500.svg"></a>
+              <a href="https://www.google.com/maps/contrib/108486332591359686275/reviews"><img class="logoImage" src="assets/images/icons8-google-maps-50.svg"></a></div>
+          
+
+          </div>
+        </div>
+       
+      </div>
+    </form>
+  </div>
+
+</section>
+<footer>
+  <div class="footerText font-Lora"><img class="copyright" src="assets/images/icons8-copyright-24.png"> Copyright Sushma 2023 &nbsp;<span class="design font-Lora"> Designed and developed by Sushma</span></div>
+</footer>

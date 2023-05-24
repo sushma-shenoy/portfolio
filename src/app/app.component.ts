@@ -26,8 +26,8 @@ export class AppComponent {
       var st = window.pageYOffset || document.documentElement.scrollTop;
       if (
         st > lastScrollTop &&
-        (document.body.scrollTop > 550 ||
-          document.documentElement.scrollTop > 550)
+        (document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50)
       ) {
         document.getElementById("header")?.classList.add("growHader");
       } else if (st < lastScrollTop && window.scrollY < 550) {
