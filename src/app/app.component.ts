@@ -13,7 +13,7 @@ export class AppComponent {
     window.addEventListener(
       "resize",
       () => {
-        if (window.innerWidth > 550) this.sharedService.isDesktop.next(true);
+        if (window.innerWidth > 700) this.sharedService.isDesktop.next(true);
         else {
           this.sharedService.isDesktop.next(false);
         }

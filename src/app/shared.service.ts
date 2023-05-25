@@ -10,7 +10,7 @@ export class SharedService {
   isDesktop = new BehaviorSubject(true);
   constructor(private http: HttpClient) {}
   getDeviceDetail() {
-    if (window.innerWidth < 550) this.isDesktop.next(false);
+    if (window.innerWidth < 700) this.isDesktop.next(false);
   }
   PostMessage(input: any) {
     return this.http
