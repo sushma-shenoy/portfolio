@@ -21,8 +21,9 @@
   }
 }
 
-.certcard:last-child {
+.certcard:nth-last-child(-n + 2) {
   flex-grow: 0;
+  flex-shrink: 1;
 }
 
 @media screen and (max-width:500px) {

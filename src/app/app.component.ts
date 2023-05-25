@@ -22,24 +22,33 @@ export class AppComponent {
     );
     this.sharedService.isDesktop.subscribe((data) => (this.isDesktop = data));
     let sec = document.addEventListener("scroll", () => {
-      this.hovers();
-      var st = window.pageYOffset || document.documentElement.scrollTop;
-      if (
-        st > lastScrollTop &&
-        (document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50)
-      ) {
-        document.getElementById("header")?.classList.add("growHader");
-      } else if (st < lastScrollTop && window.scrollY < 550) {
-        document.getElementById("header")?.classList.remove("growHader");
+      if (!this.isDesktop) {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var q = document.getElementById("scrollBar");
+        if (q) q.style.width = scrolled + "%";
+      } else {
+        this.hovers();
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        if (
+          st > lastScrollTop &&
+          (document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 50)
+        ) {
+          document.getElementById("header")?.classList.add("growHader");
+        } else if (st < lastScrollTop && window.scrollY < 550) {
+          document.getElementById("header")?.classList.remove("growHader");
 
-        // upscroll code
-      } // else was horizontal scroll
-      lastScrollTop = st <= 0 ? 0 : st;
+          // upscroll code
+        } // else was horizontal scroll
+        lastScrollTop = st <= 0 ? 0 : st;
+      }
     });
     var lastScrollTop = 0;
-
-    console.log(sec);
   }
   hovers() {
     let sections = document.querySelectorAll("section");
