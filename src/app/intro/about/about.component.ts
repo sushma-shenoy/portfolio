@@ -15,7 +15,7 @@ export class AboutComponent {
   getPDF() {
     let link = document.createElement("a");
     link.download = "Sushma-Resume.pdf";
-    link.href = "./../../assets/resume/Sushma_Resume.pdf";
+    link.href = "assets/resume/Sushma_Resume.pdf";
     link.click();
   }
 }
