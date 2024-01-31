@@ -8,7 +8,37 @@ import { SharedService } from "./shared.service";
 })
 export class AppComponent {
   isDesktop = false;
+  cookieMessage =
+    "This website uses cookies to ensure you get best experience on this website";
+  cookieLinkText = "Learn More";
+  cookieDismiss = "Allow";
   constructor(private sharedService: SharedService) {
+    let cc = window as any;
+    cc.cookieconsent.initialise({
+      palette: {
+        popup: {
+          background: "#164969",
+          border: "10px 0 0 10px",
+        },
+        button: {
+          background: "#ffe000",
+          text: "#164969",
+        },
+      },
+      theme: "classic",
+      position: "bottom",
+      type: "opt-out",
+      content: {
+        message:
+          "This website uses cookies to ensure you get the best experience on our website.",
+        dismiss: "Got it!",
+        deny: "Refuse cookies",
+        link: "Learn more",
+        href: "https://cookiesandyou.com",
+        policy: "Cookie Policy",
+      },
+    });
+
     this.sharedService.getDeviceDetail();
     window.addEventListener(
       "resize",

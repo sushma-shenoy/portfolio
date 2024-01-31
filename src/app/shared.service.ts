@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable, map } from "rxjs";
   providedIn: "root",
 })
 export class SharedService {
-  api = "https://mailthis.to/sushma2223";
+  api = "https://mailthis.to/sushma.s2223";
   isDesktop = new BehaviorSubject(true);
   constructor(private http: HttpClient) {}
   getDeviceDetail() {
