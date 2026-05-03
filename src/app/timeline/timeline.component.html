@@ -17,9 +17,11 @@
       </div>
       <ng-template #rightSide>
         <div class="container right">
-          <div class="date">{{project.year}}</div>
+          <div class="date desktop">{{project.year}}</div>
           <i class=" desktop fa-solid icon fa fa-briefcase" style="color: #b1a9a9;"></i>
           <div class="content">
+            <div class="dateMobile mobile">{{project.year}}</div>
+
             <h2>{{project.role}}</h2>
             <p>
               {{project.name}}
